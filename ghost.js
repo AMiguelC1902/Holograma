@@ -42,7 +42,7 @@ import { FBXLoader } from 'three/addons/loaders/FBXLoader.js';
         // Cargar modelo FBX y aplicar textura
         const ObjRotacion = [];
         const fbxLoader = new FBXLoader();
-        fbxLoader.load('/chicken.fbx', (object) => {
+        fbxLoader.load('chicken.fbx', (object) => {
             object.scale.set(0.03, 0.03, 0.03); // Escalar si es necesario
             object.position.set(0, -2, 0);
             scene.add(object);
